@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import Join from "./components/Join";
+
 function App() {
   return (
     <>
-      <div>Hola</div>
+      <Routes>
+        <Route path="/" element={<Join />} />
+      </Routes>
     </>
   );
 }
