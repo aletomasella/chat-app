@@ -17,7 +17,8 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const [users, setUsers] = useState([]);
-  const ENDPOINT = process.env.ENDPOINT || "localhost:3001";
+  const ENDPOINT =
+    process.env.ENDPOINT || "https://chat-app-production-240c.up.railway.app/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);

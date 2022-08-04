@@ -14,7 +14,7 @@ const httpServer = http.createServer(app);
 
 const io = new socketio.Server(httpServer, {
   cors: {
-    origin: process.env.ORIGIN || "http://localhost:3000",
+    origin: process.env.ORIGIN || "https://chat-app-at.vercel.app/",
     methods: ["GET", "PUT", "POST", "DELETE"],
   },
 });
