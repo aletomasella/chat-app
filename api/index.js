@@ -14,7 +14,7 @@ const httpServer = http.createServer(app);
 
 const io = new socketio.Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: process.env.ORIGIN || "http://localhost:3000",
     methods: ["GET", "PUT", "POST", "DELETE"],
   },
 });
