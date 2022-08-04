@@ -6,11 +6,11 @@ import styles from "./Messages.module.css";
 const Messages = ({ messages, name }) => {
   return (
     <>
-      <ScrollToBottom>
+      <ScrollToBottom className={styles.messages}>
         {messages &&
           messages.map((message, i) => {
             return (
-              <div key={i} className={styles.messages}>
+              <div key={i}>
                 <Message name={name} message={message} />
               </div>
             );
