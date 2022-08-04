@@ -30,8 +30,8 @@ const Join = () => {
             />{" "}
           </div>
           {room && name ? (
-            <Link to={`/chat?name=${name}$room=${room}`}>
-              <button className="" type="submit">
+            <Link to={`/chat?name=${name}&room=${room}`}>
+              <button className={styles.button} type="submit">
                 Sign In
               </button>
             </Link>

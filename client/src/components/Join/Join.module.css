@@ -9,12 +9,14 @@
 
 .joinInnerContainer {
   width: 20%;
+  min-width: 250px;
 }
 
 .joinInput {
   border-radius: 0;
   padding: 15px 20px;
   width: 100%;
+  min-width: 200px;
 }
 
 .heading {
@@ -34,6 +36,7 @@
   display: inline-block;
   border: none;
   width: 100%;
+  min-width: 200px;
 }
 
 .mt-20 {
@@ -52,4 +55,8 @@
 
 button:focus {
   outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
